@@ -76,7 +76,7 @@ public class AdminServlet extends HttpServlet {
         //Book[] b=client.getBooks()
         List<Book> books=book.getBook();
        
-        Book[] b=(Book[])books.toArray();
+        Book[] b=(Book[]) books.toArray();
         request.setAttribute("Books", b);
         RequestDispatcher rd = request.getRequestDispatcher("/showbooks.jsp");
 	rd.forward(request, response);
